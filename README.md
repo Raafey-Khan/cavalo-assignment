@@ -23,7 +23,7 @@ A full-stack blogging system where users can:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/simple-blog-platform.git
+git clone https://github.com/Raafey-Khan/cavalo-assignment.git
 cd simple-blog-platform
 ```
 
