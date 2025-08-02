@@ -103,15 +103,6 @@ The frontend talks to the backend at `http://localhost:5000`. Ensure both server
 - **Backend**: Express.js, MongoDB, JWT
 - **Extras**: React Toastify, Postman, Vercel (optional)
 
----
-
-##  API Documentation (Postman)
-
-Import the file:
-
-```
-postman/BlogAPI.postman_collection.json
-```
 
 ### Sample API Endpoints:
 ```
