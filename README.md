@@ -101,7 +101,7 @@ The frontend talks to the backend at `http://localhost:5000`. Ensure both server
 ### Tech Stack
 - **Frontend**: Next.js (App Router), TypeScript, Redux Toolkit, TailwindCSS | React Custom Hook
 - **Backend**: Express.js, MongoDB, JWT
-- **Extras**: React Toastify, Postman, Vercel (optional)
+- **Extras**: React Toastify, Postman for APi testin
 
 
 ### Sample API Endpoints:
