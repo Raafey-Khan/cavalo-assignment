@@ -53,7 +53,7 @@ JWT_SECRET=your_jwt_secret
 ### Run the Backend Server
 
 ```bash
-npm run dev
+node index.js
 ```
 
 Runs at: `http://localhost:5000`
