@@ -2,7 +2,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import signupImage from '../public/signup.jpg'; 
-
+import dynamic from 'next/dynamic';
+const PublicBlogs = dynamic(() => import('../components/PublicBlogs'), { ssr: false });
 export default function HomePage() {
   return (
     <div className="relative min-h-[100vh] overflow-hidden">
@@ -11,10 +12,10 @@ export default function HomePage() {
         src={signupImage}
         alt="Background"
         fill
-        className="object-cover opacity-10 pointer-events-none z-18"
+        className="object-cover opacity-6  pointer-events-none z-18"
         priority
       />
-      <div className="relative z-10 flex flex-col justify-center items-center text-center px-6 py-20 min-h-[100vh] bg-gradient-to-br from-blue-50 via-white to-purple-100  dark:via-gray-800 dark:to-gray-900 bg-opacity-50">
+      <div className="relative z-15 flex flex-col justify-center items-center text-center px-6 py-20 min-h-[100vh] bg-gradient-to-br from-blue-50 via-white to-purple-100  dark:via-gray-800 dark:to-gray-900 bg-opacity-50">
         <h1 className="text-5xl md:text-6xl font-extrabold text-black dark:text-white leading-tight">
           Write. Share. Inspire.
         </h1>
@@ -22,7 +23,7 @@ export default function HomePage() {
           Create beautiful blogs, share your thoughts, and connect with others. Join the platform where your voice matters.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-4">
+        <div className="mt-10 flex flex-row sm:flex-row  gap-4">
           <Link href="/login">
             <span className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition cursor-pointer">
               Login
@@ -34,6 +35,8 @@ export default function HomePage() {
             </span>
           </Link>
         </div>
+
+        <PublicBlogs />
 
         <div className="mt-12 text-gray-500 dark:text-gray-400 text-sm">
           ✍️ Built with Next.js, Redux Toolkit & MongoDB
